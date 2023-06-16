@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>제주옵서예:로그인 페이지</title>
+    <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        /* 새로운 스타일 정의 */
+        .hero {
+            background-color: orange !important;
+        }
+        .hero2 {
+            background-color: darkolivegreen !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero bg-dark text-center py-4">
+        <h1 class="text-white">제주옵서예</h1>
+        <h2 class="text-white">제주도 여행의 모든것, 제주옵서예</h2>
+    </div>
+    <style>
+        .navbar-nav {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        .navbar-nav li {
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+      
+        .ml-auto {
+          margin-left: auto;
+        }
+
+    .hero2 {
+        background-color: darkolivegreen !important;
+        margin-bottom: 20px;
+    }
+  
+    .login-card {
+        margin: 20px;
+    }
+      </style>
+      
+      <div class="hero2 bg-dark text-center py-8">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+              <div class="container">
+                  <a class="navbar-brand" href="#">
+                      <img src="logo.png" alt="로고">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">관광지</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">음식</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">쇼핑</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">축제와 행사</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">숙박</a>
+                          </li>
+                      </ul>
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">마이페이지</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">로그인</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+
+
+
+     
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .login-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 60px;
+        }
+    
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+    
+        .input-container input {
+            flex-grow: 1;
+            padding: 100px;
+            border: 1px solid #ccc;
+        }
+    
+        .login-button {
+            margin-top: 5px;
+            width: 100%;
+        }
+    </style>
+
+    <div class="container">
+        <div class="login-card text-center" style="margin: 60px;">
+            <h3>로그인</h3>
+            <h3 style="font-size: 20px; display: inline-block; background-color: yellow;">"제주옵서예에 오신 것을 환영합니다"</h3>
+            <h3 style="font-size: 16px;">로그인 후 다양한 서비스를 이용하실 수 있습니다.</h3>
+            
+            <form>
+                <div>
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" placeholder="아이디를 입력하세요" style="padding: 6px; border: 1px solid #ccc;">
+                </div>
+                <div style="margin-bottom: 5px;"></div>
+                <div>
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" style="padding: 6px; border: 1px solid #ccc;">
+                </div>
+                <div style="margin-bottom: 5px;"></div>
+                <div>
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">아이디 저장</label>
+                </div>
+                <div style="margin-bottom: 5px;"></div>
+                
+                <style>
+                    .login-button {
+                        background-color: orange;
+                        color: white;
+                        border: none; /* 테두리를 제거하는 속성 */
+                    }
+                </style>
+                
+                <!-- 수정된 코드 -->
+                <input type="submit" value="로그인" onclick="showLoginMessage()" class="login-button">              
+            </form>
+
+            <style>
+                .link-text {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: gray;
+                }
+                
+                .link-text:hover {
+                    color: orange;
+                }
+            </style>
+            
+            <div style="margin-top: 10px; font-size: 12px;">
+                <span class="link-text" onclick="location.href='id_find.html';">아이디 찾기</span>
+                <span style="margin: 0 5px; font-size: 12px;">|</span>
+                <span class="link-text" onclick="location.href='pw_find.html';">비밀번호 찾기</span>
+                <span style="margin: 0 5px; font-size: 12px;">|</span>
+                <span class="link-text" onclick="location.href='join.html';">회원가입</span>
+            </div>
+            
+            <style>
+                .social-login-buttons a {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            </style>
+            
+            <style>
+                .social-login-buttons {
+                    display: flex;
+                    align-items: center; /* 수직 정렬 설정 */
+                }
+            
+                .social-login-buttons a {
+                    display: inline-block;
+                    margin-right: 10px; /* 이미지 사이의 간격 설정 */
+                }
+            </style>
+            
+            <div class="social-login-buttons">
+                <div style="margin-top: 15px;"></div>
+                <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fcategory%3D25#login">
+                    <img src="카카오_로그인.png" alt="카카오 로그인">
+                </a>
+                <a href="네이버_로그인_주소">
+                    <img src="네이버_로그인.png" alt="네이버 로그인" width="33" height="33">
+                </a>
+                <a href="구글_로그인_주소">
+                    <img src="구글_로그인.png" alt="구글 로그인" width="40" height="40">
+                </a>
+            </div>
+            
+            <script>
+                // JavaScript
+                function login() {
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+                    
+                    if (username === "") {
+                        showStatusMessage("아이디를 입력하세요");
+                        return;
+                    } else if (password === "") {
+                        showStatusMessage("비밀번호를 입력하세요");
+                        return;
+                    } else {
+                        // 아이디 저장 기능
+                        saveUsername();
+                        showStatusMessage("아이디 및 비밀번호를 확인해주세요");
+                    }
+                    
+                    // 로그인 처리 등 추가 로직
+                }
+                
+                function saveUsername() {
+                    var remember = document.getElementById("remember").checked;
+                    
+                    if (remember) {
+                        var username = document.getElementById("username").value;
+                        localStorage.setItem("savedUsername", username);
+                    } else {
+                        localStorage.removeItem("savedUsername");
+                    }
+                }
+                
+                function showStatusMessage(message) {
+                    // 상태 메시지 창 표시 로직
+                }
+            </script>
+            
+            <script>
+                function showLoginMessage() {
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+                    var message = "";
+                    
+                    if (username === "" && password === "") {
+                        message = "아이디와 비밀번호를 입력하세요";
+                    } else if (username === "") {
+                        message = "아이디를 입력하세요";
+                    } else if (password === "") {
+                        message = "비밀번호를 입력하세요";
+                    } else {
+                        message = "아이디 및 비밀번호를 확인해주세요";
+                    }
+                    
+                    alert(message);
+                }
+                
+                // 팝업 창이 닫힐 때 아이디 저장
+                window.onbeforeunload = function() {
+                    saveUsername();
+                };
+            </script>
+            
+            <script>
+                // 페이지 로드 시 저장된 아이디를 불러와서 입력 필드에 설정하는 함수
+                window.onload = function() {
+                    var savedUsername = localStorage.getItem("savedUsername");
+                    if (savedUsername) {
+                        document.getElementById("username").value = savedUsername;
+                        document.getElementById("remember").checked = true;
+                    }
+                };
+            </script>
+            
